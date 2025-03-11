@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 
 // import Header from "../components/header";
 import Hero from "../components/sections/Hero";
-import Features from "../components/sections/features";
+import Features from "../components/sections/Features";
 import Services from "../components/sections/services";
 import Team from "../components/sections/team";
 import Testimonials from "../components/sections/testimonials";
