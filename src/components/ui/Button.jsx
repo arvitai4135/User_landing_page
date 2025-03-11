@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Button = ({ children, onClick, className }) => {
+const Button = ({ children, onClick, className = "" }) => {
   return (
     <button
       className={`px-4 py-2 bg-blue-500 text-white rounded ${className}`}
@@ -11,4 +11,4 @@ export const Button = ({ children, onClick, className }) => {
   );
 };
 
-// export default Button;
+export default Button;
