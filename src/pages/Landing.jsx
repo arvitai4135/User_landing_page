@@ -4,13 +4,13 @@ import { motion, useAnimation } from "framer-motion";
 
 // import Header from "../components/header";
 import Hero from "../components/sections/Hero";
-import Features from "../components/sections/features";
-import Services from "../components/sections/services";
-import Team from "../components/sections/team";
-import Testimonials from "../components/sections/testimonials";
-import Faq from "../components/sections/faq";
-import Cta from "../components/sections/cta";
-// import Footer from "../components/fsections/ooter";
+import Features from "../components/sections/Features";
+import Services from "../components/sections/Services";
+import Team from "../components/sections/Team";
+import Testimonials from "../components/sections/Testimonials";
+import Faq from "../components/sections/Faq";
+import Cta from "../components/sections/Cta";
+// import Footer from "../components/fsections/Footer";
 
 export default function Landing() {
   return (
