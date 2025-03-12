@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+import { Button } from "../ui/uBtton";
 import { motion } from "framer-motion";
 import image from "../../assets/hero-image.png";
 
