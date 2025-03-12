@@ -64,7 +64,7 @@ export default function About() {
               className="relative h-[400px] rounded-lg overflow-hidden"
             >
               <img
-                src="/placeholder.svg?height=800&width=600"
+                src="/team.png"
                 alt="MediCare medical team"
                 fill
                 className="object-cover"

@@ -8,28 +8,28 @@ export default function Services() {
       title: "For Patients",
       description:
         "Register, create profiles, schedule appointments, chat with doctors, make secure payments, and order medications with doorstep delivery.",
-      image: "/placeholder.svg?height=300&width=400&text=Patients",
+      image: "./pat.png",
       // link: "/patient-services",
     },
     {
       title: "For Doctors",
       description:
         "Manage your profile, schedule, and patient interactions. Conduct video consultations, provide prescriptions, and manage your practice efficiently.",
-      image: "/placeholder.svg?height=300&width=400&text=Doctors",
+      image: "./doc.jpeg",
       // link: "/doctor-services",
     },
     {
       title: "For Head Doctors",
       description:
         "Manage your clinic, add new doctors, assign patient cases, review prescriptions, and manage the entire healthcare workflow seamlessly.",
-      image: "/placeholder.svg?height=300&width=400&text=Administrators",
+      image: "./doc.jpeg",
       // link: "/admin-services",
     },
     {
       title: "Pharmacy Services",
       description:
         "Integrated medicine ordering, prescription verification, real-time delivery tracking, and automated order updates for a complete healthcare experience.",
-      image: "/placeholder.svg?height=300&width=400&text=Pharmacy",
+      image: "./phar.jpeg",
       // link: "/pharmacy-services",
     },
   ];

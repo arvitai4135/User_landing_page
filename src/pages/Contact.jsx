@@ -35,7 +35,7 @@ export default function Contact() {
                   <p className="text-muted-foreground">
                     123 Medical Center Drive
                     <br />
-                    San Francisco, CA 94107
+                    Maharashtra, India
                   </p>
                 </div>
               </div>
