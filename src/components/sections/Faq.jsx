@@ -5,35 +5,34 @@ import { ChevronDown } from "lucide-react";
 export default function Faq() {
   const faqs = [
     {
-      question: "What services do you offer?",
+      question: "How do I register as a patient?",
       answer:
-        "We offer a comprehensive range of services including web development, mobile app development, UI/UX design, digital marketing, and IT consulting. Our team of experts works closely with clients to deliver tailored solutions that meet their specific needs and goals.",
+        "Registering as a patient is simple. Download our app, click on the 'Register' button, and follow the prompts to create your account. You'll need to provide basic information and verify your email or phone number to complete the registration process.",
     },
     {
-      question: "How long does it take to complete a project?",
+      question: "How do video consultations work?",
       answer:
-        "Project timelines vary depending on the scope, complexity, and specific requirements. A simple website might take 2-4 weeks, while a complex web application or mobile app could take 3-6 months. During our initial consultation, we'll provide you with a detailed timeline based on your project specifications.",
+        "After booking an appointment, you'll receive a notification 10 minutes before your scheduled time. Simply open the app, go to your appointments section, and click on the 'Join Consultation' button. Ensure you have a stable internet connection and your device's camera and microphone permissions are enabled.",
     },
     {
-      question: "What is your pricing structure?",
+      question: "What payment methods are accepted?",
       answer:
-        "We offer flexible pricing options including fixed-price quotes for well-defined projects and time-and-materials billing for projects with evolving requirements. We work with clients to find a pricing structure that fits their budget and project needs. Contact us for a customized quote.",
+        "We accept multiple payment options including Credit/Debit Cards, UPI, Net Banking, and various digital wallets. All payment information is securely processed using industry-standard encryption to protect your financial data.",
     },
     {
-      question: "Do you provide ongoing support after project completion?",
+      question: "How does medication delivery work?",
       answer:
-        "Yes, we offer various maintenance and support packages to ensure your digital products continue to perform optimally after launch. These packages include regular updates, security patches, performance monitoring, and technical support. We can tailor a support plan to meet your specific needs.",
+        "You can upload your prescription through the app's 'Pharmacy' section. Our team will verify the prescription, process your order, and arrange for delivery to your specified address. You can track your order in real-time through the app and receive automated updates via SMS and email.",
     },
     {
-      question: "How do you ensure the security of my website or application?",
+      question: "How do doctors join the platform?",
       answer:
-        "Security is a top priority in all our development projects. We implement industry best practices including secure coding standards, regular security audits, encryption, secure authentication methods, and protection against common vulnerabilities. We also provide recommendations for ongoing security maintenance.",
+        "Doctors can be added by the Head Doctor or administrator. The admin will invite you via your Gmail address, and you'll receive a verification link with a default password. Upon first login, you'll be prompted to change your password and complete your professional profile.",
     },
     {
-      question:
-        "Can you help with an existing project that needs improvements?",
+      question: "Is my medical data secure on the app?",
       answer:
-        "We frequently work with clients to improve, update, or expand existing digital products. Our team can perform a thorough assessment of your current project, identify areas for improvement, and implement the necessary changes to enhance functionality, performance, and user experience.",
+        "Yes, we take data security very seriously. All medical records and personal information are encrypted and stored securely following healthcare industry standards and regulations. We implement strict access controls, and your data is never shared with third parties without your explicit consent.",
     },
   ];
 
@@ -51,8 +50,8 @@ export default function Faq() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-muted-foreground">
-            Find answers to common questions about our services, process, and
-            more.
+            Find answers to common questions about our healthcare platform,
+            features, and services.
           </p>
         </div>
 
@@ -67,7 +66,7 @@ export default function Faq() {
               className="mb-4"
             >
               <button
-                // onClick={() => toggleFaq(index)}
+                onClick={() => toggleFaq(index)}
                 className={`w-full text-left p-6 rounded-lg flex justify-between items-center ${
                   openIndex === index
                     ? "bg-primary text-primary-foreground"

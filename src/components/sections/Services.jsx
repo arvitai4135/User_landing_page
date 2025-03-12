@@ -1,37 +1,36 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-// import Image from "next/image";
 
 export default function Services() {
   const services = [
     {
-      title: "Web Development",
+      title: "For Patients",
       description:
-        "Custom websites and web applications tailored to your specific business needs and goals.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "/services/web-development",
+        "Register, create profiles, schedule appointments, chat with doctors, make secure payments, and order medications with doorstep delivery.",
+      image: "/placeholder.svg?height=300&width=400&text=Patients",
+      // link: "/patient-services",
     },
     {
-      title: "Mobile App Development",
+      title: "For Doctors",
       description:
-        "Native and cross-platform mobile applications that deliver exceptional user experiences.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "/services/mobile-development",
+        "Manage your profile, schedule, and patient interactions. Conduct video consultations, provide prescriptions, and manage your practice efficiently.",
+      image: "/placeholder.svg?height=300&width=400&text=Doctors",
+      // link: "/doctor-services",
     },
     {
-      title: "UI/UX Design",
+      title: "For Head Doctors",
       description:
-        "User-centered design that enhances usability and creates engaging digital experiences.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "/services/ui-ux-design",
+        "Manage your clinic, add new doctors, assign patient cases, review prescriptions, and manage the entire healthcare workflow seamlessly.",
+      image: "/placeholder.svg?height=300&width=400&text=Administrators",
+      // link: "/admin-services",
     },
     {
-      title: "Digital Marketing",
+      title: "Pharmacy Services",
       description:
-        "Strategic marketing solutions to increase your online presence and drive growth.",
-      image: "/placeholder.svg?height=300&width=400",
-      link: "/services/digital-marketing",
+        "Integrated medicine ordering, prescription verification, real-time delivery tracking, and automated order updates for a complete healthcare experience.",
+      image: "/placeholder.svg?height=300&width=400&text=Pharmacy",
+      // link: "/pharmacy-services",
     },
   ];
 
@@ -39,10 +38,10 @@ export default function Services() {
     <section id="services" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">User Services</h2>
           <p className="text-lg text-muted-foreground">
-            We offer a comprehensive range of services to help your business
-            succeed in the digital world.
+            Our comprehensive healthcare platform offers tailored services for
+            patients, doctors, administrators, and pharmacy integration.
           </p>
         </div>
 
@@ -61,8 +60,7 @@ export default function Services() {
                   <img
                     src={service.image || "/placeholder.svg"}
                     alt={service.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full"
                   />
                 </div>
                 <div className="p-6">

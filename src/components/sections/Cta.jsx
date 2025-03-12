@@ -21,23 +21,27 @@ export default function Cta() {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Ready to Transform Your Business?
+              Ready to Transform Your Healthcare Experience?
             </h2>
             <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
-              Join hundreds of satisfied clients who have taken their business
-              to the next level with our innovative solutions.
+              Join thousands of patients and healthcare providers who are
+              already benefiting from our innovative healthcare platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-base">
-                Get Started Today
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-base bg-secondary text-white"
+              >
+                Download App Now
               </Button>
-              <Link to="/contact">
+              <Link to="/">
                 <Button
                   size="lg"
                   variant="outline"
                   className="text-base border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
                 >
-                  Contact Us
+                  Register as Patient
                 </Button>
               </Link>
             </div>

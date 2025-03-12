@@ -1,30 +1,29 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-// import Image from "next/image";
 
 export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        "Working with this team has been an absolute pleasure. They delivered our project on time and exceeded our expectations in every way.",
-      author: "Emily Johnson",
-      position: "CEO, TechStart Inc.",
-      image: "/placeholder.svg?height=100&width=100&text=EJ",
+        "This app has transformed how I access healthcare. I can connect with my doctor instantly, and the medicine delivery is so convenient!",
+      author: "Sarah Johnson",
+      position: "Patient",
+      image: "/placeholder.svg?height=100&width=100&text=SJ",
     },
     {
       quote:
-        "The attention to detail and level of customer service we received was outstanding. I highly recommend their services to anyone looking for quality work.",
-      author: "David Wilson",
-      position: "Marketing Director, GrowthCo",
-      image: "/placeholder.svg?height=100&width=100&text=DW",
+        "As a doctor, this platform has helped me manage my patients more efficiently. The video consultation features are seamless and secure.",
+      author: "Dr. Michael Chen",
+      position: "Cardiologist",
+      image: "/placeholder.svg?height=100&width=100&text=MC",
     },
     {
       quote:
-        "Their innovative approach to problem-solving helped us overcome challenges we'd been facing for years. A truly transformative partnership.",
-      author: "Sophia Martinez",
-      position: "CTO, InnovateX",
-      image: "/placeholder.svg?height=100&width=100&text=SM",
+        "The prescription upload feature and medicine delivery service saved me so much time. I highly recommend this app to everyone!",
+      author: "Priya Sharma",
+      position: "Patient",
+      image: "/placeholder.svg?height=100&width=100&text=PS",
     },
   ];
 
@@ -54,11 +53,11 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What Our Clients Say
+            What Our Users Say
           </h2>
           <p className="text-lg text-muted-foreground">
-            Don't just take our word for it. Here's what our clients have to say
-            about working with us.
+            Read about the experiences of patients and healthcare providers who
+            use our platform.
           </p>
         </div>
 
@@ -85,7 +84,7 @@ export default function Testimonials() {
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
                   <img
-                    src={"/placeholder.svg"}
+                    src={testimonials[current].image}
                     alt={testimonials[current].author}
                     width={64}
                     height={64}

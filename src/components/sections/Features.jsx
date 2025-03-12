@@ -1,43 +1,50 @@
 import { motion } from "framer-motion";
-import { Zap, Shield, BarChart, Users, Globe, Cpu } from "lucide-react";
+import {
+  Video,
+  MessageSquare,
+  Calendar,
+  CreditCard,
+  Pill,
+  FileText,
+} from "lucide-react";
 
 export default function Features() {
   const features = [
     {
-      icon: <Zap className="h-10 w-10 text-primary" />,
-      title: "Lightning Fast",
+      icon: <Video className="h-10 w-10 text-primary" />,
+      title: "Video Consultations",
       description:
-        "Our solutions are optimized for speed and performance, ensuring your business operates efficiently.",
+        "Connect with doctors through high-quality video calls for face-to-face consultations from the comfort of your home.",
     },
     {
-      icon: <Shield className="h-10 w-10 text-primary" />,
-      title: "Secure & Reliable",
+      icon: <MessageSquare className="h-10 w-10 text-primary" />,
+      title: "Secure Messaging",
       description:
-        "We implement the highest security standards to keep your data safe and your systems running smoothly.",
+        "Chat with your healthcare providers through our encrypted messaging system for quick questions and follow-ups.",
     },
     {
-      icon: <BarChart className="h-10 w-10 text-primary" />,
-      title: "Data Analytics",
+      icon: <Calendar className="h-10 w-10 text-primary" />,
+      title: "Easy Scheduling",
       description:
-        "Gain valuable insights with our advanced analytics tools and make data-driven decisions.",
+        "Book, reschedule, or cancel appointments with just a few taps. Receive timely reminders for upcoming consultations.",
     },
     {
-      icon: <Users className="h-10 w-10 text-primary" />,
-      title: "User-Friendly",
+      icon: <CreditCard className="h-10 w-10 text-primary" />,
+      title: "Multiple Payment Options",
       description:
-        "Intuitive interfaces designed with the user in mind, making technology accessible to everyone.",
+        "Pay securely using Credit/Debit Cards, UPI, Net Banking, or Digital Wallets with our integrated payment gateway.",
     },
     {
-      icon: <Globe className="h-10 w-10 text-primary" />,
-      title: "Global Reach",
+      icon: <Pill className="h-10 w-10 text-primary" />,
+      title: "Medication Delivery",
       description:
-        "Expand your business globally with our international solutions and support services.",
+        "Upload prescriptions and get medicines delivered to your doorstep. Track orders in real-time through our app.",
     },
     {
-      icon: <Cpu className="h-10 w-10 text-primary" />,
-      title: "AI-Powered",
+      icon: <FileText className="h-10 w-10 text-primary" />,
+      title: "Digital Health Records",
       description:
-        "Leverage the power of artificial intelligence to automate processes and enhance productivity.",
+        "Store and access all your medical records, prescriptions, and test results in one secure, centralized location.",
     },
   ];
 
@@ -64,12 +71,10 @@ export default function Features() {
     <section id="features" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our Key Features
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">App Features</h2>
           <p className="text-lg text-muted-foreground">
-            Discover the powerful features that set our solutions apart and help
-            your business thrive in today's competitive landscape.
+            Discover the powerful features that make healthcare accessible,
+            convenient, and secure for patients and healthcare providers.
           </p>
         </div>
 

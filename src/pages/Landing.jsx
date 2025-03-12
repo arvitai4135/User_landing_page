@@ -10,7 +10,7 @@ import Team from "../components/sections/Team";
 import Testimonials from "../components/sections/Testimonials";
 import Faq from "../components/sections/Faq";
 import Cta from "../components/sections/Cta";
-// import Footer from "../components/fsections/ooter";
+// import Footer from "../components/fsections/Footer";
 
 export default function Landing() {
   return (
@@ -43,14 +43,14 @@ export default function Landing() {
           <Services />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <Team />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
