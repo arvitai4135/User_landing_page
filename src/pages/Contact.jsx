@@ -1,10 +1,6 @@
-// import Header from "@/components/header";
-// import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/Button";
-// import { Input } from "@/components/ui/input";
-// import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -17,10 +13,12 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="max-w-5xl mx-auto"
         >
-          <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
+          <h1 className="text-4xl font-bold text-center mb-8">
+            Contact MediCare
+          </h1>
           <p className="text-lg text-center text-muted-foreground mb-12">
-            We'd love to hear from you. Please fill out the form below or use
-            our contact information.
+            We're here to help with your healthcare needs. Please reach out
+            using the form below or through our contact information.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -35,7 +33,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">Our Location</h3>
                   <p className="text-muted-foreground">
-                    123 Business Avenue, Suite 100
+                    123 Medical Center Drive
                     <br />
                     San Francisco, CA 94107
                   </p>
@@ -45,8 +43,12 @@ export default function Contact() {
               <div className="flex items-start space-x-4">
                 <Phone className="h-6 w-6 text-primary mt-1" />
                 <div>
-                  <h3 className="font-medium">Phone Number</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <h3 className="font-medium">Phone Numbers</h3>
+                  <p className="text-muted-foreground">
+                    Main: +1 (555) 123-4567
+                    <br />
+                    Emergency: +1 (555) 911-0000
+                  </p>
                 </div>
               </div>
 
@@ -55,7 +57,23 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">Email Address</h3>
                   <p className="text-muted-foreground">
-                    contact@yourcompany.com
+                    info@medicare.com
+                    <br />
+                    appointments@medicare.com
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <Clock className="h-6 w-6 text-primary mt-1" />
+                <div>
+                  <h3 className="font-medium">Office Hours</h3>
+                  <p className="text-muted-foreground">
+                    Monday - Friday: 8:00 AM - 7:00 PM
+                    <br />
+                    Saturday: 9:00 AM - 5:00 PM
+                    <br />
+                    Sunday: Closed
                   </p>
                 </div>
               </div>
@@ -91,10 +109,26 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium">
-                  Subject
+                <label htmlFor="phone" className="text-sm font-medium">
+                  Phone Number
                 </label>
-                <input id="subject" placeholder="How can we help you?" />
+                <input id="phone" type="tel" placeholder="(555) 123-4567" />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="reason" className="text-sm font-medium">
+                  Reason for Contact
+                </label>
+                <select id="reason">
+                  <option value="" disabled selected>
+                    Select a reason
+                  </option>
+                  <option value="appointment">Schedule an Appointment</option>
+                  <option value="information">General Information</option>
+                  <option value="billing">Billing Inquiry</option>
+                  <option value="feedback">Feedback or Suggestions</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
 
               <div className="space-y-2">
@@ -103,9 +137,24 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  placeholder="Your message here..."
+                  placeholder="Please provide details about your inquiry..."
                   className="min-h-[150px]"
                 />
+              </div>
+
+              <div className="flex items-start gap-2">
+                <input type="checkbox" id="privacy" className="mt-1" />
+                <label
+                  htmlFor="privacy"
+                  className="text-sm text-muted-foreground"
+                >
+                  I consent to MediCare collecting and storing the submitted
+                  information. For more details, see our{" "}
+                  <a href="/privacy" className="text-primary">
+                    Privacy Policy
+                  </a>
+                  .
+                </label>
               </div>
 
               <Button className="w-full">Send Message</Button>

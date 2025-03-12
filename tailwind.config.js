@@ -5,17 +5,35 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#3b82f6",
-          foreground: "#ffffff",
+          DEFAULT: "#1E8E3E",
+          foreground: "#FFFFFF",
+        },
+        secondary: {
+          DEFAULT: "#a80829",
+          foreground: "#FFFFFF",
+        },
+        accent: {
+          DEFAULT: "#FFC107",
+          foreground: "#333333",
         },
         muted: {
-          DEFAULT: "#f3f4f6",
-          foreground: "#6b7280",
+          DEFAULT: "#F5F5F5",
+          foreground: "#666666",
         },
         card: {
-          DEFAULT: "#ffffff",
+          DEFAULT: "#FFFFFF",
+          foreground: "#333333",
         },
-        background: "#ffffff",
+        background: "#FFFFFF",
+        text: {
+          primary: "#333333",
+          secondary: "#666666",
+          light: "#FFFFFF",
+        },
+        border: "#E0E0E0",
+        success: "#1E8E3E",
+        error: "#a80829",
+        disabled: "#BDBDBD",
       },
     },
   },

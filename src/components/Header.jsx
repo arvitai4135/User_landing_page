@@ -27,10 +27,10 @@ export default function Header() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "/#services" },
-    { name: "Team", path: "/#team" },
-    { name: "Testimonials", path: "/#testimonials" },
-    { name: "FAQ", path: "/#faq" },
+    // { name: "Services", path: "/#services" },
+    // { name: "Doctors", path: "/#team" },
+    // { name: "Testimonials", path: "/#testimonials" },
+    // { name: "FAQ", path: "/#faq" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -44,9 +44,12 @@ export default function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="font-bold text-2xl">
-            Company<span className="text-primary">Name</span>
-          </Link>
+          <div className="flex gap-3.5 items-center">
+            <img src="/logo.png" alt="" className="h-10" />
+            <Link to="/" className="font-bold text-2xl">
+              Medi<span className="text-primary">Care</span>
+            </Link>
+          </div>
 
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -60,7 +63,7 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <Button>Get Started</Button>
+            <Button>Download App</Button>
           </nav>
 
           <button
@@ -100,7 +103,7 @@ export default function Header() {
                     {link.name}
                   </Link>
                 ))}
-                <Button className="w-full">Get Started</Button>
+                <Button className="w-full">Book Appointment</Button>
               </nav>
             </div>
           </motion.div>

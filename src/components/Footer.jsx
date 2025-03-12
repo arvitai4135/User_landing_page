@@ -7,9 +7,9 @@ import {
   Mail,
   Phone,
   MapPin,
+  Clock,
 } from "lucide-react";
 import { Button } from "./ui/Button";
-// import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
@@ -18,11 +18,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="font-bold text-2xl mb-4">
-              Company<span className="text-primary">Name</span>
+              Medi<span className="text-primary">Care</span>
             </h3>
             <p className="text-muted-foreground mb-4">
-              Providing innovative solutions for your business needs since 2015.
-              We're dedicated to excellence and customer satisfaction.
+              Providing compassionate healthcare services since 2015. We're
+              dedicated to improving patient outcomes and delivering exceptional
+              medical care.
             </p>
             <div className="flex space-x-4">
               <a
@@ -61,7 +62,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/"
+                  to="/"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Home
@@ -69,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  to="/about"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   About Us
@@ -77,26 +78,34 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#services"
+                  to="/#services"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Services
+                  Our Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#team"
+                  to="/#team"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Our Team
+                  Our Doctors
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  to="/contact"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/appointment"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Book Appointment
                 </Link>
               </li>
             </ul>
@@ -108,7 +117,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-2 mt-0.5" />
                 <span className="text-muted-foreground">
-                  123 Business Avenue, Suite 100
+                  123 Medical Center Drive
                   <br />
                   San Francisco, CA 94107
                 </span>
@@ -119,18 +128,26 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-2" />
+                <span className="text-muted-foreground">info@medicare.com</span>
+              </li>
+              <li className="flex items-start">
+                <Clock className="h-5 w-5 text-primary mr-2 mt-0.5" />
                 <span className="text-muted-foreground">
-                  contact@yourcompany.com
+                  Monday - Friday: 8:00 AM - 7:00 PM
+                  <br />
+                  Saturday: 9:00 AM - 5:00 PM
+                  <br />
+                  Sunday: Closed
                 </span>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Subscribe</h3>
+            <h3 className="font-bold text-lg mb-4">Newsletter</h3>
             <p className="text-muted-foreground mb-4">
-              Subscribe to our newsletter to receive updates and exclusive
-              offers.
+              Subscribe to our newsletter to receive health tips and exclusive
+              offers on our services.
             </p>
             <div className="space-y-2">
               <input placeholder="Your email address" type="email" />
@@ -142,27 +159,26 @@ export default function Footer() {
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} CompanyName. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} MediCare. All rights reserved.
             </p>
             <div className="flex space-x-4 text-sm">
               <Link
-                href="/privacy"
+                to="/privacy"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms"
+                to="/terms"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 Terms of Service
               </Link>
               <Link
-                href="/cookies"
+                to="/accessibility"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Cookie Policy
+                Accessibility
               </Link>
             </div>
           </div>
