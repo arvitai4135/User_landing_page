@@ -84,14 +84,14 @@ export default function Footer() {
                   Our Services
                 </Link>
               </li>
-              <li>
+{/*               <li>
                 <Link
                   to="/#team"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Our Doctors
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to="/contact"
@@ -100,14 +100,14 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-              <li>
+{/*               <li>
                 <Link
                   to="/appointment"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   Book Appointment
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -159,7 +159,7 @@ export default function Footer() {
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} MediCare. All rights reserved.
+              &copy; {new Date().getFullYear()} Developed by HD Media Network   MediCare. All rights reserved. 
             </p>
             <div className="flex space-x-4 text-sm">
               <Link
